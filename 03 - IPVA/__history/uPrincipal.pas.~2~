@@ -1,0 +1,54 @@
+unit uPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TfrmPrincipal = class(TForm)
+    pnlPrincipal: TPanel;
+    lblValorCarro: TLabel;
+    edtValor: TEdit;
+    cboTipoVeiculo: TComboBox;
+    lblTipoVeiculo: TLabel;
+    btnCalcular: TButton;
+    btnLimpar: TButton;
+  private
+    procedure ValidarCampos;
+    function CalcularImposto;
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPrincipal: TfrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+{ TfrmPrincipal }
+
+procedure TfrmPrincipal.validarCampos;
+begin
+  if edtValor.Text = '' then
+  begin
+    ShowMessage('O valor do veículo deve ser preenchido!');
+    edtValor.SetFocus;
+    Abort;
+  end;
+
+  if cboTipoVeiculo.ItemIndex = -1 then
+  begin
+    ShowMessage('O tipo do veículo deve ser informado!');
+    cboTipoVeiculo.SetFocus;
+    Abort;
+  end;
+
+
+end;
+
+end.
