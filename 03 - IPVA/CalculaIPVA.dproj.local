@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2021/08/24 21:10:23.870,=C:\Users\Gustavo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2021/08/24 21:10:41.728,C:\Projects\zDelphi\03 - IPVA\uPrincipal.pas=C:\Users\Gustavo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2021/08/24 21:10:41.728,C:\Projects\zDelphi\03 - IPVA\uPrincipal.dfm=C:\Users\Gustavo\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2021/08/24 21:10:46.351,C:\Projects\zDelphi\03 - IPVA\CalculaIPVA.dproj=C:\Users\Gustavo\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+	<Transactions>
+    <Transaction>2021/08/24 21:10:23.000.870,=C:\Users\Gustavo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/08/24 21:10:41.000.728,C:\Users\Gustavo\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Projects\zDelphi\03 - IPVA\uPrincipal.dfm</Transaction>
+    <Transaction>2021/08/24 21:10:41.000.728,C:\Users\Gustavo\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Projects\zDelphi\03 - IPVA\uPrincipal.pas</Transaction>
+    <Transaction>2021/08/24 21:10:46.000.351,C:\Users\Gustavo\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Projects\zDelphi\03 - IPVA\CalculaIPVA.dproj</Transaction>
   </Transactions>
 </BorlandProject>

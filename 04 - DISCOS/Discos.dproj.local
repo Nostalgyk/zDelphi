@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2021/08/26 19:37:40.746,=C:\Users\Gustavo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/08/26 19:38:09.876,C:\Projects\zDelphi\04 - DISCOS\uPrincipal.dfm=C:\Users\Gustavo\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/08/26 19:38:09.876,C:\Projects\zDelphi\04 - DISCOS\uPrincipal.pas=C:\Users\Gustavo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/08/26 19:38:21.544,C:\Projects\zDelphi\04 - DISCOS\Discos.dproj=C:\Users\Gustavo\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2021/08/26 20:58:51.159,=C:\Projects\zDelphi\04 - DISCOS\Unit1.pas</Transaction>
+    <Transaction>2021/08/26 21:33:53.032,C:\Projects\zDelphi\04 - DISCOS\frmCadastroBanda.dfm=C:\Projects\zDelphi\04 - DISCOS\Unit1.dfm</Transaction>
+    <Transaction>2021/08/26 21:33:53.032,C:\Projects\zDelphi\04 - DISCOS\frmCadastroBanda.pas=C:\Projects\zDelphi\04 - DISCOS\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

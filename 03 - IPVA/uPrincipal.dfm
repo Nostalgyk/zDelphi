@@ -3,7 +3,7 @@ object frmPrincipal: TfrmPrincipal
   Top = 0
   BorderIcons = [biSystemMenu]
   Caption = 'Calculadora de IPVA'
-  ClientHeight = 171
+  ClientHeight = 353
   ClientWidth = 509
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -74,5 +74,14 @@ object frmPrincipal: TfrmPrincipal
     Height = 25
     Caption = '&Limpar'
     TabOrder = 2
+    OnClick = btnLimparClick
+  end
+  object lbxResultado: TListBox
+    Left = 0
+    Top = 174
+    Width = 509
+    Height = 179
+    ItemHeight = 13
+    TabOrder = 3
   end
 end

@@ -2,8 +2,9 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2021/08/09 22:01:08.000.916,=C:\Users\lab\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
-    <Transaction>2021/08/09 22:14:15.000.256,C:\Users\lab\Documents\Embarcadero\Studio\Projects\Unit2.dfm=C:\Users\lab\Documents\Embarcadero\Studio\Projects\0908\uPrincipal.dfm</Transaction>
     <Transaction>2021/08/09 22:14:15.000.256,C:\Users\lab\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\Users\lab\Documents\Embarcadero\Studio\Projects\0908\uPrincipal.pas</Transaction>
+    <Transaction>2021/08/09 22:14:15.000.256,C:\Users\lab\Documents\Embarcadero\Studio\Projects\Unit2.dfm=C:\Users\lab\Documents\Embarcadero\Studio\Projects\0908\uPrincipal.dfm</Transaction>
     <Transaction>2021/08/09 22:14:19.000.490,C:\Users\lab\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\lab\Documents\Embarcadero\Studio\Projects\0908\INSS.dproj</Transaction>
+    <Transaction>2021/08/26 20:58:29.849,=C:\Projects\zDelphi\02 - INSS\Unit1.pas</Transaction>
   </Transactions>
 </BorlandProject>

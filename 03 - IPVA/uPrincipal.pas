@@ -15,7 +15,9 @@ type
     lblTipoVeiculo: TLabel;
     btnCalcular: TButton;
     btnLimpar: TButton;
+    lbxResultado: TListBox;
     procedure btnCalcularClick(Sender: TObject);
+    procedure btnLimparClick(Sender: TObject);
   private
 
   const
@@ -26,6 +28,7 @@ type
     ONIBUS_CAMINHAO = 0.01;
 
     procedure ValidarCampos;
+    procedure LimparCampos;
     function CalcularImposto(pValorVeiculo: Real; pTipoVeiculo: Integer): Real;
     { Private declarations }
   public
@@ -40,11 +43,39 @@ implementation
 {$R *.dfm}
 
 { TfrmPrincipal }
-
+      {
 procedure TfrmPrincipal.btnCalcularClick(Sender: TObject);
 begin
-  ShowMessage('O valor do imposto é: ' +
-   FloatToStr(lValorImposto));
+  ValidarCampos;
+  {ShowMessage('O valor do imposto é: ' +
+   FloatToStr(CalcularImposto(StrToFloat(edtValor.Text), cboTipoVeiculo.ItemIndex)));
+
+  lblValorCarro := StrToFloat(edtValor.Text);
+  lbxResultado.Items.Add('O imposto
+end;
+ }
+ procedure TfrmPrincipal.btnCalcularClick(Sender: TObject);
+var
+  lValorVeiculo: Real;
+begin
+  ValidarCampos;
+  lValorVeiculo := StrToFloat(edtValor.Text);
+  lbxResultado.Items.Add('O imposto do veículo de valor ' +
+    FormatFloat('R$ #,##0', lValorVeiculo) + ' do tipo ' +
+    cboTipoVeiculo.Text + ' é: ' +
+    FormatFloat(
+      'R$ #,##0',
+      CalcularImposto(lValorVeiculo,
+      cboTipoVeiculo.ItemIndex)
+    )
+  );
+  LimparCampos;
+  edtValor.SetFocus;
+end;
+
+procedure TfrmPrincipal.btnLimparClick(Sender: TObject);
+begin
+  lbxResultado.Items.Clear;
 end;
 
 function TfrmPrincipal.CalcularImposto(pValorVeiculo: Real;
@@ -61,6 +92,12 @@ begin
   end;
 
   Result := lValorImposto;
+end;
+
+procedure TfrmPrincipal.LimparCampos;
+begin
+  edtValor.Clear;
+  cboTipoVeiculo.ItemIndex := -1;
 end;
 
 procedure TfrmPrincipal.validarCampos;
