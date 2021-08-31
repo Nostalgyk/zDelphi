@@ -72,7 +72,6 @@ begin
   LimparCampos;
   edtValor.SetFocus;
 end;
-
 procedure TfrmPrincipal.btnLimparClick(Sender: TObject);
 begin
   lbxResultado.Items.Clear;

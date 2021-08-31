@@ -3,7 +3,7 @@ program Discos;
 uses
   Vcl.Forms,
   uPrincipal in 'uPrincipal.pas' {frmDisco},
-  frmCadastroBanda in 'frmCadastroBanda.pas' {frmCadBanda};
+  uCadastroBanda in 'uCadastroBanda.pas' {frmCadBanda};
 
 {$R *.res}
 

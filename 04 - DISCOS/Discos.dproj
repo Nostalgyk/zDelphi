@@ -102,7 +102,7 @@
             <Form>frmDisco</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="frmCadastroBanda.pas">
+        <DCCReference Include="uCadastroBanda.pas">
             <Form>frmCadBanda</Form>
             <FormType>dfm</FormType>
         </DCCReference>

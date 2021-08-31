@@ -3,7 +3,7 @@ object frmDisco: TfrmDisco
   Top = 0
   Caption = 'It'#39's Disco'
   ClientHeight = 287
-  ClientWidth = 428
+  ClientWidth = 425
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,7 +15,7 @@ object frmDisco: TfrmDisco
   PixelsPerInch = 96
   TextHeight = 13
   object lblTitle: TLabel
-    Left = 156
+    Left = 148
     Top = 24
     Width = 126
     Height = 19
@@ -51,6 +51,7 @@ object frmDisco: TfrmDisco
     Height = 25
     Caption = 'Adicionar Banda'
     TabOrder = 1
+    OnClick = btnAdcBandaClick
   end
   object btnRemvBanda: TButton
     Left = 216

@@ -16,6 +16,7 @@ type
     ListBox1: TListBox;
     btnListBanda: TButton;
     btnVerDisco: TButton;
+    procedure btnAdcBandaClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -29,5 +30,19 @@ implementation
 
 {$R *.dfm}
 
+uses uCadastroBanda;
 
+procedure TfrmDisco.btnAdcBandaClick(Sender: TObject);
+var
+NomeBanda: String;
+  begin
+
+    try
+      Application.CreateForm(TfrmCadBanda, frmDisco);
+      frmCadBanda.ShowModal;
+    finally
+      FreeAndNil(frmCadBanda);
+    end;
+
+  end;
 end.
