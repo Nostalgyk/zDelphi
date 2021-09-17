@@ -73,8 +73,8 @@ object frmDisco: TfrmDisco
   object lbxResultado: TListBox
     Left = 0
     Top = 153
-    Width = 425
-    Height = 130
+    Width = 433
+    Height = 127
     ItemHeight = 13
     TabOrder = 4
   end

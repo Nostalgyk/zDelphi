@@ -2,7 +2,7 @@ object frmDisco: TfrmDisco
   Left = 0
   Top = 0
   Caption = 'It'#39's Disco'
-  ClientHeight = 287
+  ClientHeight = 314
   ClientWidth = 425
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -60,6 +60,7 @@ object frmDisco: TfrmDisco
     Height = 25
     Caption = 'Remover Banda'
     TabOrder = 2
+    OnClick = btnRemoverClick
   end
   object altBanda: TButton
     Left = 116
@@ -69,7 +70,7 @@ object frmDisco: TfrmDisco
     Caption = 'Alterar Banda'
     TabOrder = 3
   end
-  object ListBox1: TListBox
+  object lbxResultado: TListBox
     Left = 0
     Top = 153
     Width = 425
@@ -92,5 +93,23 @@ object frmDisco: TfrmDisco
     Height = 25
     Caption = 'Ver Discos'
     TabOrder = 6
+  end
+  object btnInfo: TButton
+    Left = 285
+    Top = 286
+    Width = 75
+    Height = 25
+    Caption = '&Informa'#231#245'es'
+    TabOrder = 7
+    OnClick = btnInfoClick
+  end
+  object btnSair: TButton
+    Left = 365
+    Top = 286
+    Width = 51
+    Height = 25
+    Caption = '&Sair'
+    TabOrder = 8
+    OnClick = btnSairClick
   end
 end

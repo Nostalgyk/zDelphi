@@ -133,19 +133,16 @@ end;
 
 procedure TfrmDisco.ValidarInsercao;
 begin
-    if cboBanda.ItemIndex = cVALOR_VAZIO then
-begin
   ExibirMensagem('Selecione a banda a ser adicionada.', Alerta);
   cboBanda.SetFocus;
   Abort;
 end;
-end;
+
 procedure TfrmDisco.ValidarLancamentoDuplicado;
 var
   i: integer;
 begin
   for i:= cVALOR_ZERO to Pred(lbxResultado.Items.Count) do
-  if lbxResultado.Items[i] = cboBanda.Text then
   begin
     ExibirMensagem('A banda "' + cboBanda.Text + '" já foi adicionada.' + #13 +
       'A operação será cancelada.', Alerta);
