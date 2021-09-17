@@ -1,0 +1,115 @@
+object frmDisco: TfrmDisco
+  Left = 0
+  Top = 0
+  Caption = 'It'#39's Disco'
+  ClientHeight = 314
+  ClientWidth = 425
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesigned
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblTitle: TLabel
+    Left = 148
+    Top = 24
+    Width = 126
+    Height = 19
+    Caption = 'Seletor de Bandas'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object cboBanda: TComboBox
+    Left = 16
+    Top = 64
+    Width = 394
+    Height = 21
+    TabOrder = 0
+    Items.Strings = (
+      ''
+      'Engenheiros do Hawaii'
+      'Skank'
+      'Paralamas do Sucesso'
+      'Biquini Cavad'#227'o'
+      'Capital Inicial'
+      'Ira'
+      'Nirvana'
+      'Scorpions')
+  end
+  object btnAdcBanda: TButton
+    Left = 16
+    Top = 91
+    Width = 94
+    Height = 25
+    Caption = 'Adicionar Banda'
+    TabOrder = 1
+    OnClick = btnAdcBandaClick
+  end
+  object btnRemvBanda: TButton
+    Left = 216
+    Top = 91
+    Width = 94
+    Height = 25
+    Caption = 'Remover Banda'
+    TabOrder = 2
+    OnClick = btnRemoverClick
+  end
+  object altBanda: TButton
+    Left = 116
+    Top = 91
+    Width = 94
+    Height = 25
+    Caption = 'Alterar Banda'
+    TabOrder = 3
+  end
+  object lbxResultado: TListBox
+    Left = 0
+    Top = 153
+    Width = 425
+    Height = 130
+    ItemHeight = 13
+    TabOrder = 4
+  end
+  object btnListBanda: TButton
+    Left = 316
+    Top = 91
+    Width = 94
+    Height = 25
+    Caption = 'Listar Bandas'
+    TabOrder = 5
+  end
+  object btnVerDisco: TButton
+    Left = 176
+    Top = 122
+    Width = 75
+    Height = 25
+    Caption = 'Ver Discos'
+    TabOrder = 6
+  end
+  object btnInfo: TButton
+    Left = 285
+    Top = 286
+    Width = 75
+    Height = 25
+    Caption = '&Informa'#231#245'es'
+    TabOrder = 7
+    OnClick = btnInfoClick
+  end
+  object btnSair: TButton
+    Left = 365
+    Top = 286
+    Width = 51
+    Height = 25
+    Caption = '&Sair'
+    TabOrder = 8
+    OnClick = btnSairClick
+  end
+end

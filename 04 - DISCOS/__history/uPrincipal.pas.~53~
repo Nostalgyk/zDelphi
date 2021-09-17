@@ -1,0 +1,120 @@
+unit uPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmDisco = class(TForm)
+    cboBanda: TComboBox;
+    lblTitle: TLabel;
+    btnAdcBanda: TButton;
+    btnRemvBanda: TButton;
+    altBanda: TButton;
+    lbxResultado: TListBox;
+    btnListBanda: TButton;
+    btnVerDisco: TButton;
+    btnInfo: TButton;
+    btnSair: TButton;
+    procedure btnAdcBandaClick(Sender: TObject);
+    procedure btnInfoClick(Sender: TObject);
+
+  private
+    type
+      TTipoMensagem = (Informacao, Alerta, Exclusao);
+
+      const
+        cNOME_SISTEMA = 'Controle de Discos';
+
+      var
+        FQuantidadeRegistrosInseridos,
+        FQuantidadeRegistroExcluidos: integer;
+
+        procedure ValidarInsercao;
+        procedure ValidarExclusao;
+        procedure ValidarLancamentoDuplicado;
+        procedure AdicionarBanda;
+        procedure RemoverBanda;
+
+        procedure ExibirMensagem(pMensagem: string; pTipoMensagem: TTipoMensagem);
+  public
+    { Public declarations }
+
+  end;
+
+var
+  frmDisco: TfrmDisco;
+
+
+implementation
+
+{$R *.dfm}
+
+uses
+  uCadastroBanda;
+
+procedure TfrmDisco.AdicionarBanda;
+begin
+  lbxResultado.Items.Add(cboBanda.Text);
+  cboResultado.ItemIndex := -1;
+end;
+
+procedure TfrmDisco.btnAdcBandaClick(Sender: TObject);
+  begin
+    ValidarInsercao;
+    ValidarLancamentoDuplicado;
+    AdicionarBanda;
+    Inc(FQuantidadeRegistrosInseridos);
+end;
+
+procedure TfrmDisco.btnInfoClick(Sender: TObject);
+begin
+  ExibirMensagem('Informações: ' + #13 + #13 +
+  'Total de Registros: ' + IntToStr(lbxResultado.Items.Count) + #13 +
+  'Total de Lançamentos: ' + IntToStr(FQuantidadeRegistrosInseridos) + #13 +
+  'Total de Exclusões: ' + IntToStr(FQuantidadeRegistrosExcluidos), Informacao);
+end;
+
+//   try
+//      Application.CreateForm(TfrmCadBanda, frmDisco);
+//      frmCadBanda.ShowModal;
+//    finally
+//      FreeAndNil(frmCadBanda);
+//    end;
+//
+//  end;
+
+procedure TfrmDisco.ExibirMensagem(pMensagem: string;
+  pTipoMensagem: TTipoMensagem);
+begin
+  case pTipoMensagem of
+  Informacao: Application.MessageBox(PChar(pMensagem), PWideChar(cNOME_SISTEMA), MB_ICONINFORMATION);
+  Alerta: Application.MessageBox(PChar(pMensagem), PWideChar(cNOME_SISTEMA), MB_ICONWARNING);
+  Exclusao: Application.MessageBox(PChar(pMensagem), PWideChar(cNOME_SISTEMA), MB_ICONERROR);
+
+  end;
+end;
+
+procedure TfrmDisco.RemoverBanda;
+begin
+
+end;
+
+procedure TfrmDisco.ValidarExclusao;
+begin
+
+end;
+
+procedure TfrmDisco.ValidarInsercao;
+begin
+
+end;
+
+procedure TfrmDisco.ValidarLancamentoDuplicado;
+begin
+
+end;
+
+end.
