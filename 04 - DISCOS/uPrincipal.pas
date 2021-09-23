@@ -97,7 +97,7 @@ end;
 //      Application.CreateForm(TfrmCadBanda, frmDisco);
 //      frmCadBanda.ShowModal;
 //    finally
-//      FreeAndNil(frmCadBanda);
+//      FreeAndNill(frmCadBanda);
 //    end;
 //
 //  end;
